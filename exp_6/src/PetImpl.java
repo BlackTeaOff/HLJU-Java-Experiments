@@ -28,4 +28,9 @@ public abstract class PetImpl implements Pet { // 定义了一个宠物的标准
         }
         return this.name.equals(((PetImpl) obj).name) && this.age == ((PetImpl) obj).age; // 使用equals(==比较内存地址)
     }
+
+    // 作用: 抽取和复用公共代码，如果没有这个抽象类，Cat和Dog类都需要定义name和age，实现getName与getAge
+    // 重写toString和equals
+
+    // 抽象宠物，它的子类就是某一种具体的动物，把所有宠物共有的属性集中
 }
