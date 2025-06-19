@@ -22,7 +22,7 @@ public abstract class PetImpl implements Pet { // 定义了一个宠物的标准
     }
 
     @Override
-    public boolean equals(Object obj) {
+    public boolean equals(Object obj) { // 上转型，当一个方法需要一个父类参数时，可以传入任何一个子类的实例
         if (!(obj instanceof PetImpl)) { // 不是PetImpl类型或者它的子类
             return false;
         }
