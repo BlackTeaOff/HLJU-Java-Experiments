@@ -26,6 +26,6 @@ public abstract class PetImpl implements Pet { // 定义了一个宠物的标准
         if (!(obj instanceof PetImpl)) { // 不是PetImpl类型或者它的子类
             return false;
         }
-        return this.name == ((PetImpl) obj).name && this.age == ((PetImpl) obj).age;
+        return this.name.equals(((PetImpl) obj).name) && this.age == ((PetImpl) obj).age; // 使用equals(==比较内存地址)
     }
 }
