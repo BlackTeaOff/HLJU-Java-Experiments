@@ -1,6 +1,6 @@
 public class Node { // 不需要访问外部类的实例成员--static
-    Object data;
-    Node next;
+    private Object data;
+    private Node next;
 
     Node(Object data) {
         this.data = data;
