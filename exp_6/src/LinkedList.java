@@ -24,7 +24,7 @@ public class LinkedList { // 聚合关系 Has-A
         if (head == null) {
             return false;
         }
-        if (head.getData().equals(data)) {
+        if (head.getData().equals(data)) { // getData返回Object实例，equals调用的也是该实例的实际类型(PetImpl)的equals方法
             head = head.getNext();
             return true;
         }
