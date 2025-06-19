@@ -24,7 +24,7 @@ public class PetShop {
 
     public Pet get(int index) {
         if (pets.get(index) != null) {
-            return (Pet) pets.get(index).data;
+            return (Pet) pets.get(index).getData();
         }
         return null;
     }
