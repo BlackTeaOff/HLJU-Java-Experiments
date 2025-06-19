@@ -9,8 +9,8 @@ public class PetShop {
 //            return false;
 //        }
         for (int i = 0; i < pets.size(); i++) {
-            PetImpl p = (PetImpl) pets.get(i).data;
-            if (p.equals(pet)) {
+            Pet p = (Pet) pets.get(i).getData(); // 编译类型是Pet
+            if (p.equals(pet)) { // 编译类型是Pet，实际类型看传入的类型，在实例类型里面找equals方法
                 return false;
             }
         }
