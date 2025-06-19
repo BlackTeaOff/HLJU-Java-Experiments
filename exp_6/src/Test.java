@@ -18,7 +18,7 @@ public class Test {
 
         System.out.println("Q5:");
         System.out.println(list.insertAfter(p, 23));
-        System.out.println(p.next);
+        System.out.println(p.getNext());
         System.out.println("-----");
 
         System.out.println("Q6:");
